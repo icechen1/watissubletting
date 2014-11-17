@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<html ng-app="CoopFriend">
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href= "/static/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="/static/script.js"></script>
+    <script src="/static/ui-bootstrap-tpls-0.11.2.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+    <title>About Us</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56761383-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+    
+<body ng-controller="MainCtrl">
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <div class="inner">
+            <a href="/">
+                <h3 class="masthead-brand"><span style="color:#FCD450;">Wat</span>IsSubletting</h3>
+            </a>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li><a href="/">Home</a></li>
+              <li class = "active"><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <form id="form" role="form" class="inner cover">
+        <script type="text/ng-template" id="customTemplate.html">
+          <a style="color:{[{match.model.color}]}">
+              <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+          </a>
+        </script> 
+      </form>
+      <div class = "aboutus card">
+        <h1>About Us</h1>
+        <p>We're a group of three first year Software Engineering students at the University of Waterloo - <a href ="https://github.com/icechen1">Yu Chen Hou</a>
+            , <a href = "https://github.com/DeonHua">Deon Hua</a>, <a href = "https://github.com/rtsun95">and Ruo Tai Sun.</a></p>
+        <h2>About WatIsSubletting</h2>
+        <p>Literally based off WatAreFriends, this does the opposite - tell you when you're off stream so that you can sublet from each other.</p>
+        <h2>The "Serious" Stuff</h2>
+        <p>WatAreFriends was originally concieved late in the night - yup, that's where we get our best ideas. Try it yourself sometime! We decided to            actually implement this idea, so we did it at the (first Annual) Treetu Hackathon in the Velocity Residence.</p>
+        <p>This project was built using AngularJS and Bootstrap for the front-end, with Python/Flask providing the back-end.</p>
+        <p>Our source code is available on <a href = "https://github.com/icechen1/coop-friendship">Github</a>, in the sublet branch, in case you're interested!</p>
+        <br>
+
+      </div>
+
+      <div class="inner">
+        <p>Made with love.</p>
+      </div>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
